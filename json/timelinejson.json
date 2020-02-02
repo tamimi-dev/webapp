@@ -1,8 +1,9 @@
 {
   "$jason": {
     "head": {
-      "title": "HTML Template",
-      "actions": {
+      "title": "nCoV Tracker",
+      "description": "This app track the Corona Virus (nCoV) stats",
+	        "actions": {
         "$pull": {
           "trigger": "reload"
         },
@@ -28,37 +29,33 @@
             }
           }
         }
-      },
-      "templates": {
-        "body": {
-          "header": {
-            "title": "nCoV Tracker",
-            "style": {
+      }
+    },
+    "body": {
+      "header": {
+        "title": "nCoV Tracker",
+		"style": {
               "background": "rgb(31, 31, 31)",
+              "theme": "dark",
               "color": "#000000"
-            },
-            "menu": {
+			  },
+	     "menu": {
               "text": "Contact Me",
               "href": {
                 "url": "https://twitter.com/tamimi0x01",
                 "view": "web"
               }
             }
-          },
-          "style": {
-            "background": "rgb(42, 42, 44, 1)",
-            "color": "#000000",
-            "border": "none"
-          },
-		   "background": {
-		   "type": "html",
-		   "url": "https://tamimi-dev.github.io/app/timeline.html",
-		   "action": {
-		    "trigger": "navigate"
-			}
-			},
-
-       "footer": {
+      },
+      "background": {
+        "type": "html",
+        "url": "https://tamimi-dev.github.io/app/timeline.html",
+        "action": {
+          "type": "$default"
+        }
+      },
+	  
+	  "footer": {
         "tabs": {
           "style": {
             "background": "rgba(255,255,255,0.8)",
@@ -83,9 +80,6 @@
             },
             "url": "https://raw.githubusercontent.com/tamimi-dev/app/master/json/timelinejson.json"
           }]
-        }
-      }
-
         }
       }
     }
