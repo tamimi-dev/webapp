@@ -37,7 +37,7 @@
 		"style": {
               "background": "rgb(31, 31, 31)",
               "theme": "dark",
-              "color": "#000000"
+              "color": "#fd304c"
 			  },
 	     "menu": {
               "text": "Contact Me",
@@ -58,15 +58,14 @@
 	  "footer": {
         "tabs": {
           "style": {
-            "background": "rgba(255,255,255,0.8)",
-            "color": "#000000"
+            "background": "rgb(31, 31, 31, 0.8)",
           },
           "items": [{
             "image": "https://raw.githubusercontent.com/tamimi-dev/app/master/assets/icons/Group.png",
             "style": {
               "height": "21"
             },
-            "url": "https://jasonette.github.io/Jasonpedia/core/href/tabs.json"
+            "url": "https://raw.githubusercontent.com/tamimi-dev/app/master/json/timelinejson.json"
           }, {
             "image": "https://raw.githubusercontent.com/tamimi-dev/app/master/assets/icons/Group.png",
             "style": {
