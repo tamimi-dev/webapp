@@ -13,7 +13,7 @@
         "reload": {
           "type": "$network.request",
           "options": {
-            "url": "https://tamimi-dev.github.io/app/timeline.html",
+            "url": "https://tamimi-dev.github.io/app/totaldeaths.html",
             "dataType": "html"
           },
           "success": {
@@ -36,7 +36,7 @@
         "title": "nCoV Tracker",
 		"style": {
               "background": "rgb(31, 31, 31)",
-              "theme": "dark",
+              "theme": "light",
               "color": "#fd304c"
 			  },
 	     "menu": {
@@ -49,7 +49,7 @@
       },
       "background": {
         "type": "html",
-        "url": "https://tamimi-dev.github.io/app/timeline.html",
+        "url": "https://tamimi-dev.github.io/app/totaldeaths.html",
         "action": {
           "type": "$default"
         }
@@ -79,7 +79,7 @@
               "height": "21"
             },
             "url": "https://raw.githubusercontent.com/tamimi-dev/app/master/json/suspectedjson.json"
-          }, 
+          }, {
             "image": "https://raw.githubusercontent.com/tamimi-dev/app/master/assets/icons/Group.png",
             "style": {
               "height": "21"
@@ -87,6 +87,7 @@
             "url": "https://raw.githubusercontent.com/tamimi-dev/app/master/json/tablejson.json"
           }]
         }
+      }
     }
   }
 }
