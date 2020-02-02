@@ -17,7 +17,7 @@
             "dataType": "html"
           },
           "success": {
-            "type": "$render",
+            "type": "$default",
             "options": {
               "type": "html"
             },
