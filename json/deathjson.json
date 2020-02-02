@@ -58,7 +58,7 @@
 	  "footer": {
         "tabs": {
           "style": {
-            "background": "rgba(31, 31, 31, 0.8)"
+            "background": "rgb(31, 31, 31)"
 
           },
           "items": [{
