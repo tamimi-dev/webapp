@@ -2,34 +2,7 @@
   "$jason": {
     "head": {
       "title": "nCoV Tracker",
-      "description": "This app track the Corona Virus (nCoV) stats",
-	        "actions": {
-        "$pull": {
-          "trigger": "reload"
-        },
-        "$show": {
-          "trigger": "reload"
-        },
-        "reload": {
-          "type": "$network.request",
-          "options": {
-            "url": "https://tamimi-dev.github.io/app/timeline.html",
-            "dataType": "html"
-          },
-          "success": {
-            "type": "$render",
-            "options": {
-              "type": "html"
-            },
-            "success": {
-              "type": "$util.toast",
-              "options": {
-                "text": "Refreshed"
-              }
-            }
-          }
-        }
-      }
+      "description": "This app track the Corona Virus (nCoV) stats"
     },
     "body": {
       "header": {
