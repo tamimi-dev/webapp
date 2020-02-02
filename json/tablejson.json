@@ -58,7 +58,7 @@
 	  "footer": {
         "tabs": {
           "style": {
-            "background": "rgba(31, 31, 31, 0.8)"
+            "background": "rgb(31, 31, 31)"
 
           },
           "items": [{
@@ -79,7 +79,7 @@
               "height": "21"
             },
             "url": "https://raw.githubusercontent.com/tamimi-dev/app/master/json/suspectedjson.json"
-          }, 
+          }, {
             "image": "https://raw.githubusercontent.com/tamimi-dev/app/master/assets/icons/Group.png",
             "style": {
               "height": "21"
