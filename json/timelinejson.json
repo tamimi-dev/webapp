@@ -58,7 +58,8 @@
 	  "footer": {
         "tabs": {
           "style": {
-            "background": "rgb(31, 31, 31, 0.8)",
+            "background": "rgba(31, 31, 31, 0.8)"
+
           },
           "items": [{
             "image": "https://raw.githubusercontent.com/tamimi-dev/app/master/assets/icons/Group.png",
