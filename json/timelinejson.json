@@ -35,7 +35,6 @@
             "title": "nCoV Tracker",
             "style": {
               "background": "rgb(31, 31, 31)",
-              "theme": "dark",
               "color": "#000000"
             },
             "menu": {
