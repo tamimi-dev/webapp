@@ -72,16 +72,21 @@
             "style": {
               "height": "21"
             },
-            "url": "https://raw.githubusercontent.com/tamimi-dev/app/master/json/timelinejson.json"
+            "url": "https://raw.githubusercontent.com/tamimi-dev/app/master/json/deathjson.json"
           }, {
 			"image": "https://raw.githubusercontent.com/tamimi-dev/app/master/assets/icons/Group.png",
             "style": {
               "height": "21"
             },
-            "url": "https://raw.githubusercontent.com/tamimi-dev/app/master/json/timelinejson.json"
+            "url": "https://raw.githubusercontent.com/tamimi-dev/app/master/json/suspectedjson.json"
+          }, 
+            "image": "https://raw.githubusercontent.com/tamimi-dev/app/master/assets/icons/Group.png",
+            "style": {
+              "height": "21"
+            },
+            "url": "https://raw.githubusercontent.com/tamimi-dev/app/master/json/tablejson.json"
           }]
         }
-      }
     }
   }
 }
