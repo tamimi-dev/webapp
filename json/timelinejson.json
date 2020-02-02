@@ -1,1 +1,94 @@
+{
+  "$jason": {
+    "head": {
+      "title": "HTML Template",
+      "actions": {
+        "$pull": {
+          "trigger": "reload"
+        },
+        "$show": {
+          "trigger": "reload"
+        },
+        "reload": {
+          "type": "$network.request",
+          "options": {
+            "url": "https://tamimi-dev.github.io/app/timeline.html",
+            "dataType": "html"
+          },
+          "success": {
+            "type": "$render",
+            "options": {
+              "type": "html"
+            },
+            "success": {
+              "type": "$util.toast",
+              "options": {
+                "text": "Refreshed"
+              }
+            }
+          }
+        }
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "title": "nCoV Tracker",
+            "style": {
+              "background": "rgb(31, 31, 31)",
+              "theme": "dark",
+              "color": "#000000"
+            },
+            "menu": {
+              "text": "Contact Me",
+              "href": {
+                "url": "https://twitter.com/tamimi0x01",
+                "view": "web"
+              }
+            }
+          },
+          "style": {
+            "background": "rgb(42, 42, 44, 1)",
+            "color": "#000000",
+            "border": "none"
+          },
+		   "background": {
+		   "type": "html",
+		   "url": "https://tamimi-dev.github.io/app/timeline.html",
+		   "action": {
+		    "trigger": "navigate"
+			}
+			},
 
+       "footer": {
+        "tabs": {
+          "style": {
+            "background": "rgba(255,255,255,0.8)",
+            "color": "#000000"
+          },
+          "items": [{
+            "image": "https://raw.githubusercontent.com/tamimi-dev/app/master/assets/icons/Group.png",
+            "style": {
+              "height": "21"
+            },
+            "url": "https://jasonette.github.io/Jasonpedia/core/href/tabs.json"
+          }, {
+            "image": "https://raw.githubusercontent.com/tamimi-dev/app/master/assets/icons/Group.png",
+            "style": {
+              "height": "21"
+            },
+            "url": "https://raw.githubusercontent.com/tamimi-dev/app/master/json/timelinejson.json"
+          }, {
+			"image": "https://raw.githubusercontent.com/tamimi-dev/app/master/assets/icons/Group.png",
+            "style": {
+              "height": "21"
+            },
+            "url": "https://raw.githubusercontent.com/tamimi-dev/app/master/json/timelinejson.json"
+          }]
+        }
+      }
+
+        }
+      }
+    }
+  }
+}
