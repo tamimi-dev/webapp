@@ -1,0 +1,69 @@
+[
+    {
+    "title":"Corona Stats",
+    "drawable":"",
+    "submenu":"",
+    "iap":false,
+    "tabs":[
+      {
+        "title":"Time Line",
+        "provider":"webview",
+        "arguments":[
+          "https://tamimi-dev.github.io/app/timeline.html"
+        ]
+      },
+      {
+        "title":"Suspected and Confirmed Cases",
+        "provider":"webview",
+        "arguments":[
+          "https://tamimi-dev.github.io/app/susp_conf.html"
+          ]
+       },
+      {
+        "title":"Mortalities",
+        "provider":"webview",
+        "arguments":[
+          "https://tamimi-dev.github.io/app/totaldeaths.html"
+        ]
+      },
+      {
+        "title":"Prediction Table",
+        "provider":"webview",
+        "arguments":[
+          "https://tamimi-dev.github.io/app/table.html"
+        ]
+      }
+    ]
+  },
+  {
+    "title":"Corona Dashboard",
+    "drawable":"",
+    "submenu":"",
+    "iap":false,
+    "tabs":[
+      {
+        "title":"Dashboard",
+        "provider":"webview",
+        "arguments":[
+          "https://tamimi-dev.github.io/app/dash.html"
+        ]
+      }
+    ]
+  },
+  {
+    "title":"About",
+    "drawable":"",
+    "submenu":"",
+    "iap":false,
+    "tabs":[
+      {
+        "title":"About The App",
+        "provider":"webview",
+        "arguments":[
+          "https://tamimi-dev.github.io/app/dash.html"
+        ]
+      }
+    ]
+  }
+
+]
