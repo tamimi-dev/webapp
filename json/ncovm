@@ -60,7 +60,7 @@
         "title":"About The App",
         "provider":"webview",
         "arguments":[
-          "https://tamimi-dev.github.io/app/dash.html"
+          "https://tamimi-dev.github.io/app/about.html"
         ]
       }
     ]
