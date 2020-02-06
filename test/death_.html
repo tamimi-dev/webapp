@@ -62,9 +62,26 @@
  <h2 class="title title--h3"><img class="title-icon" src="https://tamimi-dev.github.io/app/assets/icons/d.png" alt="">Confirmed Mortalities</h2>
 <div class="box box__second">
 <div class="text-center">
-<span class="badge badge-pill badge-danger"><div id="display"></div></span>
-		
-<a class="btn" ><button type="button" onclick="loadData()">Load Spreadsheet Data</button></i>Refresh</a>
+<span class="badge badge-pill badge-danger">
+
+<script type="text/javascript">
+  window.onload = function() { init() };
+
+  var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1KjJmpfL2gZh2bCReTLXhkY5JV7b0FxoW6zDPsNqCzw8/edit?usp=sharing';
+
+  function init() {
+    Tabletop.init( { key: public_spreadsheet_url,
+                     callback: showInfo,
+                     simpleSheet: true } )
+  }
+
+  function showInfo(data, tabletop) {
+    alert("Successfully processed!")
+    console.log(data);
+  }
+</script>
+
+</span>
 </div>
 
 
@@ -132,8 +149,7 @@
 	<script src="https://tamimi-dev.github.io/app/assets/js/plugins.js"></script>
     <script src="https://tamimi-dev.github.io/app/assets/js/common.js"></script>
 	<script src="https://tamimi-dev.github.io/app/assets/js/progressbar.min.js"></script>
-	<script src="https://tamimi-dev.github.io/app/assets/js/djs.js"></script>
-
+<script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
 
 </body>
 
