@@ -1,5 +1,5 @@
       function loadData() {
-          var url = "https://docs.google.com/spreadsheets/d/1KjJmpfL2gZh2bCReTLXhkY5JV7b0FxoW6zDPsNqCzw8/edit#gid=0&range=A1&output=csv";
+          var url = "https://docs.google.com/spreadsheet/pub?key=p_aHW5nOrj0VO2ZHTRRtqTQ&single=true&gid=0&range=A1&output=csv";
           xmlhttp = new XMLHttpRequest();
           xmlhttp.onreadystatechange = function () {
               if (xmlhttp.readyState == 4) {
