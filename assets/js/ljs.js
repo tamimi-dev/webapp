@@ -10,7 +10,7 @@ $.getJSON("https://spreadsheets.google.com/feeds/list/1fgjVhzrbqcCOP8Zls00BV--Js
         var loc = data.feed.entry[i]['gsx$location']['$t'];
 		var desc = data.feed.entry[i]['gsx$description']['$t'];
 
-                document.getElementById('timel').innerHTML += ('<article class="timeline__item">'+'<h5 class="title title--h5 timeline__title">'+cose+' '+'<span class="badge badge-pill badge-danger">'+loc+'</span>'+'</h5>'+'<span class="timeline__period">'+date+time+'</span>'+'<p class="timeline__description">'+desc+'</p>'+'</article>');
+                document.getElementById('timel').innerHTML += ('<article class="timeline__item">'+'<h5 class="title title--h5 timeline__title">'+cose+' '+'<span class="badge badge-pill badge-danger">'+loc+'</span>'+'</h5>'+'<span class="timeline__period">'+date+''+time+'</span>'+'<p class="timeline__description">'+desc+'</p>'+'</article>');
       }
     });
 
