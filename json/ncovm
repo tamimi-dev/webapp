@@ -20,7 +20,7 @@
           ]
        },
       {
-        "title":"Mortalities",
+        "title":"Fatalities",
         "provider":"webview",
         "arguments":[
           "https://tamimi-dev.github.io/app/totaldeaths.html"
