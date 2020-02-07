@@ -6,9 +6,10 @@
 
 table.table1 {
   border-collapse: collapse;
-  border-radius: 3em;
+  border-radius: 1em;
   overflow: hidden;
   border: 0;
+  position: relative;
 }
 
 table.table1 td {
