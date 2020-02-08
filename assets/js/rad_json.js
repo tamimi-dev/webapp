@@ -6,22 +6,9 @@ $.getJSON("https://spreadsheets.google.com/feeds/list/1fgjVhzrbqcCOP8Zls00BV--Js
 
         var radar1 = data.feed.entry[i]['gsx$radar1']['$t'];
 		var radar2 = data.feed.entry[i]['gsx$radar2']['$t'];
-		var jsonfile = {
-   "jsonarray": [{
-      radar1,
-      radar2
-   }]
-}
  }	
  });
  
- var data1 = jsonfile.jsonarray.map(function(e) {
-   return e.radar1;
-});
-
- var data2 = jsonfile.jsonarray.map(function(e) {
-   return e.radar2;
-});
  
 var randomScalingFactor = function() {
   return Math.round(Math.random() * 100);
@@ -53,13 +40,13 @@ var config = {
       backgroundColor: color(chartColors.red).alpha(0.2).rgbString(),
       borderColor: chartColors.red,
       pointBackgroundColor: chartColors.red,
-      data: data1,
+      data: radar1,
     }, {
       label: "Goal level",
       backgroundColor: color(chartColors.blue).alpha(0.2).rgbString(),
       borderColor: chartColors.blue,
       pointBackgroundColor: chartColors.blue,
-      data: data2,
+      data: radar2,
     }, ]
   },
   options: {
