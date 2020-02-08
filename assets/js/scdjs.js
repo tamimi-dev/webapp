@@ -7,7 +7,7 @@ $.getJSON("https://spreadsheets.google.com/feeds/list/1fgjVhzrbqcCOP8Zls00BV--Js
 
         var susp = data.feed.entry[i]['gsx$susp']['$t'];
 		var confir = data.feed.entry[i]['gsx$conf']['$t'];
-		var death = data.feed.entry[i]['gsx$conf']['$t'];
+		var death = data.feed.entry[i]['gsx$death']['$t'];
 
         document.getElementById('susp').innerHTML += ('<tr>'+'<td>'+susp+'</td>'+'</tr>');
 		document.getElementById('confir').innerHTML += ('<tr>'+'<td>'+confir+'</td>'+'</tr>');
