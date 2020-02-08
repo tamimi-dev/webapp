@@ -38,13 +38,13 @@ var config = {
       backgroundColor: color(chartColors.red).alpha(0.2).rgbString(),
       borderColor: chartColors.red,
       pointBackgroundColor: chartColors.red,
-      data: [radar1]
+      data: radar1,
     }, {
       label: "Goal level",
       backgroundColor: color(chartColors.blue).alpha(0.2).rgbString(),
       borderColor: chartColors.blue,
       pointBackgroundColor: chartColors.blue,
-      data: [radar2]
+      data: radar2,
     }, ]
   },
   options: {
