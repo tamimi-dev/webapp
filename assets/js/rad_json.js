@@ -54,14 +54,20 @@ var xhttp = new XMLHttpRequest();
     if (this.readyState == 4 && this.status == 200) {
       var json = JSON.parse(this.response);
       
+  var i;
+   for (i = 0; i < sheetData.length; i++) {
+
+    var labe = data.feed.entry[i]['gsx$china']['$t'];
+	var dte = data.feed.entry[i]['gsx$chink']['$t']; 
+        
 // Map json labels  back to values array
 var labels = json.map(function (e) {
-    return e.gsx$china$t;
+    return e.labe;
 });
       
 // Map json values back to values array
 var values = json.map(function (e) {
-    return (e.gsx$chink$t); // Divide to billions in units of ten
+    return (e.dte); // Divide to billions in units of ten
 });
 
 BuildChart(labels, values, "Real Time Net Worth");
