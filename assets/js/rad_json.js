@@ -56,12 +56,12 @@ var xhttp = new XMLHttpRequest();
       
 // Map json labels  back to values array
 var labels = json.map(function (e) {
-    return e.gsx$china;
+    return e.gsx$china$t;
 });
       
 // Map json values back to values array
 var values = json.map(function (e) {
-    return (e.gsx$chink); // Divide to billions in units of ten
+    return (e.gsx$chink$t); // Divide to billions in units of ten
 });
 
 BuildChart(labels, values, "Real Time Net Worth");
