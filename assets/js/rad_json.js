@@ -20,7 +20,7 @@ function BuildChart(labels, values, chartTitle) {
 
     var ctx = document.getElementById("canvas").getContext('2d');
     var canvas = new Chart(ctx, {
-        type: 'Bar',
+        type: 'bar',
         data: data,
         options: {
             responsive: true, // Instruct chart js to respond nicely.
