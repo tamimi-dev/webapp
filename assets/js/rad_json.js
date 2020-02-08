@@ -1,4 +1,13 @@
 $.getJSON("https://spreadsheets.google.com/feeds/list/1fgjVhzrbqcCOP8Zls00BV--JsIXEenwWmMD2iF8X9VE/odifzh/public/values?alt=json", function (data) {
+	
+	var i;
+      for (i = 0; i < sheetData.length; i++) {
+
+        var radar1 = data.feed.entry[i]['gsx$radar1']['$t'];
+		var radar2 = data.feed.entry[i]['gsx$radar2']['$t'];
+	
+ });
+ 
 var randomScalingFactor = function() {
   return Math.round(Math.random() * 100);
 };
@@ -15,11 +24,7 @@ var chartColors = {
 var color = Chart.helpers.color;
 var sheetData = data.feed.entry;
 
-var i;
-      for (i = 0; i < sheetData.length; i++) {
 
-        var radar1 = data.feed.entry[i]['gsx$radar1']['$t'];
-		var radar2 = data.feed.entry[i]['gsx$radar2']['$t'];
 
 var config = {
   type: 'radar',
@@ -84,5 +89,3 @@ Chart.plugins.register({
 })
 
 window.myRadar = new Chart(document.getElementById("canvas"), config);
-
- });
