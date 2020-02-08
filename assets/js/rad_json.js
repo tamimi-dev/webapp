@@ -18,8 +18,8 @@ function BuildChart(labels, values, chartTitle) {
         }],
     };
 
-    var ctx = document.getElementById("myChart").getContext('2d');
-    var myChart = new Chart(ctx, {
+    var ctx = document.getElementById("canvas").getContext('2d');
+    var canvas = new Chart(ctx, {
         type: 'horizontalBar',
         data: data,
         options: {
@@ -42,7 +42,7 @@ function BuildChart(labels, values, chartTitle) {
         }
     });
 
-    return myChart;
+    return canvas;
 }
 
 
