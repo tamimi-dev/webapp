@@ -56,16 +56,16 @@ var xhttp = new XMLHttpRequest();
       
 // Map json labels  back to values array
 var labels = json.map(function (e) {
-    return e.person.name;
+    return e.gsx$china;
 });
       
 // Map json values back to values array
 var values = json.map(function (e) {
-    return (e.finalWorth / 1000); // Divide to billions in units of ten
+    return (e.gsx$chink); // Divide to billions in units of ten
 });
 
 BuildChart(labels, values, "Real Time Net Worth");
     }
   };
-  xhttp.open("GET", "https://forbes400.herokuapp.com/api/forbes400?limit=10", false);
+  xhttp.open("GET", "https://spreadsheets.google.com/feeds/list/1fgjVhzrbqcCOP8Zls00BV--JsIXEenwWmMD2iF8X9VE/ou32gi9/public/values?alt=json", false);
   xhttp.send();
