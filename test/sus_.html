@@ -42,14 +42,12 @@
 					    <!-- About -->
 						<div class="pb-3">
 		                    <h1 class="title title--h1 title__separate">Suspected Cases VS Confirmed Cases</h1>   
-							<button title="According to China official numbers" type="button"
-        class="btn btn-mini note"
-        data-placement='bottom'>
-    <i class="icon-refresh"></i>
-</button>
-					 <script>
-$(function() {
-    $('.note').tooltip();
+      <ul class="list-inline">
+							<li><a class="test" href="#" data-toggle="tooltip" data-placement="right" title="According to China official numbers">#</a></li>
+  </ul>			
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
 });
 </script>
 					    </div>
