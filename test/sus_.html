@@ -41,10 +41,15 @@
 						
 					    <!-- About -->
 						<div class="pb-3">
-		                    <h1 class="title title--h1 title__separate">Suspected Cases VS Confirmed Cases</h1>   <a href="#" data-toggle="tooltip" title="According to China official numbers">*</a>
+		                    <h1 class="title title--h1 title__separate">Suspected Cases VS Confirmed Cases</h1>   
+							<button title="According to China official numbers" type="button"
+        class="btn btn-mini note"
+        data-placement='bottom'>
+    <i class="icon-refresh"></i>
+</button>
 					 <script>
-$(document).ready(function(){
-  $('[data-toggle="tooltip"]').tooltip();   
+$(function() {
+    $('.note').tooltip();
 });
 </script>
 					    </div>
