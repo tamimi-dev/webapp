@@ -4,9 +4,10 @@
 @import url("https://fonts.googleapis.com/css?family=Archivo:400,400i,500,500i,600,600i,700,700i&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Merriweather:400,900&display=swap");
 
+
 @font-face {
     font-family: 'IcoMoon-Free';
-    src: url('../IcoMoon-Free.ttf') format('truetype');
+    src: url('https://tamimi-dev.github.io/app/assets/fonts/IcoMoon-Free.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
