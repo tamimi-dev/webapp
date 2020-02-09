@@ -5,13 +5,6 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather:400,900&display=swap");
 
 
-@font-face {
-    font-family: 'IcoMoon-Free';
-    src: url('https://tamimi-dev.github.io/app/assets/fonts/IcoMoon-Free.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 
 table.table1 {
   border-collapse: collapse;
@@ -3185,13 +3178,15 @@ font-weight:normal;
 font-style:normal;
 }	
 	
+
 @font-face {
 	font-family: 'icomoon';
-	src:url('https://tamim.io/assets/styles/icomoon.eot?srf3rx');
-	src:url('https://tamim.io/assets/styles/icomoon.eot?srf3rx#iefix') format('embedded-opentype'),
-		url('https://tamim.io/styles/icomoon.ttf?srf3rx') format('truetype'),
-		url('https://tamim.io/assets/styles/icomoon.woff?srf3rx') format('woff'),
-		url('https://tamim.io/assets/styles/icomoon.svg?srf3rx#icomoon') format('svg');
+	src:url('https://tamimi-dev.github.io/app/assets/fonts/icomoon.eot');
+	src:url('https://tamimi-dev.github.io/app/assets/fonts/icomoon.eot?srf3rx') format('embedded-opentype'),
+		url('https://tamimi-dev.github.io/app/assets/fonts/icomoon.ttf') format('truetype'),
+		url('https://tamimi-dev.github.io/app/assets/fonts/IcoMoon-Free.ttf') format('truetype'),
+		url('https://tamimi-dev.github.io/app/assets/fonts/icomoon.woff') format('woff'),
+		url('https://tamimi-dev.github.io/app/assets/fonts/icomoon.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
