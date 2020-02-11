@@ -1,77 +1,94 @@
-function BuildChart(labels, values, chartTitle) {
-    var data = {
-        labels: labels,
-        datasets: [{
-            label: chartTitle, // Name the series
-            data: values,
-            backgroundColor: ['rgb(54, 162, 235)',
-                'rgb(54, 162, 235)',
-                'rgb(54, 162, 235)',
-                'rgb(54, 162, 235)',
-                'rgb(54, 162, 235)',
-                'rgb(54, 162, 235)',
-                'rgb(54, 162, 235)',
-                'rgb(54, 162, 235)',
-                'rgb(54, 162, 235)',
-                'rgb(54, 162, 235)',
-            ],
-        }],
-    };
+(function() {
+	var i;
+      for (i = 0; i < sheetData.length; i++) {
 
-    var ctx = document.getElementById("canvas").getContext('2d');
-    var canvas = new Chart(ctx, {
-        type: 'bar',
-        data: data,
-        options: {
-            responsive: true, // Instruct chart js to respond nicely.
-            maintainAspectRatio: false, // Add to prevent default behaviour of full-width/height 
-            scales: {
-                xAxes: [{
-                        scaleLabel: {
-                        display: true,
-                        labelString: '$ Billion'
-                    }
-                }],
-                yAxes: [{
-                    scaleLabel: {
-                        display: true,
-                        labelString: 'Name'
-                    }
-                }]
-            },
-        }
-    });
+        var radar1 = data.feed.entry[i]['gsx$countries']['$t'];
+		var radar2 = data.feed.entry[i]['gsx$totcasepercntry']['$t'];
+	
+ });
+ 
+var randomScalingFactor = function() {
+  return Math.round(Math.random() * 100);
+};
+var chartColors = {
+	red: 'rgba(253, 48, 76)',
+	orange: 'rgb(255, 159, 64)',
+	yellow: 'rgba(240,236,211)',
+	green: 'rgb(75, 192, 192)',
+	blue: 'rgba(42,105,163)',
+	purple: 'rgb(153, 102, 255)',
+	grey: 'rgba(48,48,50)'
+};
 
-    return canvas;
-}
+var color = Chart.helpers.color;
+var sheetData = data.feed.entry;
 
+$.getJSON("https://spreadsheets.google.com/feeds/list/1fgjVhzrbqcCOP8Zls00BV--JsIXEenwWmMD2iF8X9VE/ou32gi9/public/values?alt=json", function (data) {
+	
 
-
-// Ref - https://github.com/jesseokeya/Forbes400  / https://forbes400.herokuapp.com/
-
-var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      var json = JSON.parse(this.response);
-      
-  var i;
-   for (i = 0; i < sheetData.length; i++) {
-
-    var labe = data.feed.entry[i]['gsx$china']['$t'];
-	var dte = data.feed.entry[i]['gsx$chink']['$t']; 
-        
-// Map json labels  back to values array
-var labels = json.map(function (e) {
-    return e.labe;
-});
-      
-// Map json values back to values array
-var values = json.map(function (e) {
-    return (e.dte); // Divide to billions in units of ten
-});
-
-BuildChart(labels, values, "Real Time Net Worth");
+var config = {
+  type: 'radar',
+  data: {
+    labels: [
+      ["Problem", "solving"],
+      ["Time", "management"], "Collaboration", ["Decision", "Making"], "Teamwork", "Interpersonal", "Creative"
+    ],
+    datasets: [{
+      label: "Current level",
+      backgroundColor: color(chartColors.red).alpha(0.2).rgbString(),
+      borderColor: chartColors.red,
+      pointBackgroundColor: chartColors.red,
+      data: [radar1]
+    }, {
+      label: "Goal level",
+      backgroundColor: color(chartColors.blue).alpha(0.2).rgbString(),
+      borderColor: chartColors.blue,
+      pointBackgroundColor: chartColors.blue,
+      data: [radar2]
+    }, ]
+  },
+  options: {
+    legend: {
+      position: 'top',
+      labels: {
+        fontColor: 'white'
+      }
+    },
+    title: {
+      display: true,
+      text: 'Curent level Skills vs desired',
+      fontColor: 'white'
+    },
+	  maintainAspectRatio: false,
+    scale: {
+      ticks: {
+        beginAtZero: true,
+        fontColor: 'white', // labels such as 10, 20, etc
+        showLabelBackdrop: false // hide square behind text
+      },
+      pointLabels: {
+        fontColor: 'white' // labels around the edge like 'Running'
+      },
+      gridLines: {
+        color: 'rgba(255, 255, 255, 0.2)'
+      },
+      angleLines: {
+        color: 'white' // lines radiating from the center
+      }
     }
-  };
-  xhttp.open("GET", "https://spreadsheets.google.com/feeds/list/1fgjVhzrbqcCOP8Zls00BV--JsIXEenwWmMD2iF8X9VE/ou32gi9/public/values?alt=json", false);
-  xhttp.send();
+  }
+};
+
+// A plugin to draw the background color
+Chart.plugins.register({
+  beforeDraw: function(chartInstance) {
+    var ctx = chartInstance.chart.ctx;
+    ctx.fillStyle = '#303032';
+    ctx.fillRect(0, 0, chartInstance.chart.width, chartInstance.chart.height);
+  }
+})
+
+window.myRadar = new Chart(document.getElementById("canvas"), config);
+});
+
+}());
