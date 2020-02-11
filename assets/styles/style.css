@@ -407,6 +407,8 @@ select option,
   position: relative;
   transition: .4s ease-in-out;
   white-space: nowrap;
+  margin:auto;
+  display:block;
 }
 .btn:hover {
   color: #fff;
