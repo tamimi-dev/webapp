@@ -18,6 +18,23 @@ $.getJSON("https://spreadsheets.google.com/feeds/list/1GnakUnNQvFXjuzMSPnBpU9euf
       }]
     },
     options: {
+      	  maintainAspectRatio: false,
+          scale: {
+      ticks: {
+        beginAtZero: true,
+        fontColor: 'white', // labels such as 10, 20, etc
+        showLabelBackdrop: false // hide square behind text
+      },
+      pointLabels: {
+        fontColor: 'white' // labels around the edge like 'Running'
+      },
+      gridLines: {
+        color: 'rgba(255, 255, 255, 0.2)'
+      },
+      angleLines: {
+        color: 'white' // lines radiating from the center
+      }
+    },
       tooltips: {
         callbacks: {
           title: (tooltipItem, data) => data.labels[tooltipItem[0].index]
