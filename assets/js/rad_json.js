@@ -10,14 +10,14 @@
       type: "pie",
       data: {
         datasets: [{
-          data: [2574, 1663, 1670],
+          data: [
+          data.feed.entry[0]["gsx$countries"]["$t"],
+          data.feed.entry[1]["gsx$totcasepercntry"]["$t"]
+          ],
           backgroundColor: [window.chartColors.red, window.chartColors.green, window.chartColors.blue],
           label: "Dataset 1"
         }],
-        labels: [
-          data.feed.entry[0]["gsx$countries"]["$t"],
-          data.feed.entry[1]["gsx$totcasepercntry"]["$t"]
-        ]
+        labels: [Country, Cases]
       },
       options: {
         responsive: true
