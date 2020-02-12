@@ -7,7 +7,7 @@
   $.getJSON("https://spreadsheets.google.com/feeds/list/1fgjVhzrbqcCOP8Zls00BV--JsIXEenwWmMD2iF8X9VE/ou32gi9/public/values?alt=json", function(data) {
     var ctx = document.getElementById("canvas").getContext("2d");
     window.myBar = new Chart(ctx, {
-      type: "pie",
+      type: "bar",
       data: {
         datasets: [{
           data: [
