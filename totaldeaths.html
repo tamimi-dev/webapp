@@ -57,8 +57,15 @@ $(document).ready(function(){
 <div class="box-inner box-inner--rounded">
 
  <div class="col-12 col-lg-12">
- <h2 class="title title--h3"><img class="title-icon" src="https://tamimi-dev.github.io/app/assets/icons/d.png" alt="">Confirmed Fatalities</h2>
-<div class="box box__second">
+ <h2 class="title title--h3"><img class="title-icon" src="https://tamimi-dev.github.io/app/assets/icons/d.png" alt="">Confirmed Fatalities<img src="https://tamimi-dev.github.io/app/assets/icons/info.png" title="According to China official numbers" data-toggle="tooltip" style="position:relative;right:-14px" width="20" height="20"></h2>
+<script>
+$('a[data-toggle="tooltip"]').tooltip({
+    animated: 'fade',
+    placement: 'bottom',
+    html: true
+});
+</script>		
+	 <div class="box box__second">
 <div class="text-center">
 <table class="table1" align="center">
         <tr>
