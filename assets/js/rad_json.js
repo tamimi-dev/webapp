@@ -1,17 +1,17 @@
-$.getJSON("https://spreadsheets.google.com/feeds/list/1GnakUnNQvFXjuzMSPnBpU9eufb4SooQLGL2oFc3lfAs/od6/public/values?alt=json", data => {
-  var labels = [];
-  var numbers = [];
+$.getJSON("https://spreadsheets.google.com/feeds/list/1fgjVhzrbqcCOP8Zls00BV--JsIXEenwWmMD2iF8X9VE/ou32gi9/public/values?alt=json", data => {
+  var countries = [];
+  var cases = [];
   data.feed.entry.forEach(e => {
-    labels.push(e['gsx$names']['$t']);
-    numbers.push(Number(e['gsx$numbers']['$t']));
+    countries.push(e['gsx$countries']['$t']);
+    cases.push(Number(e['gsx$totcasepercntry']['$t']));
   });
   new Chart(document.getElementById('canvas'), {
     type: 'radar',
     data: {
-      labels: labels,
+      labels: countries,
       datasets: [{
         label: 'Current level',
-        data: numbers,
+        data: cases,
         backgroundColor: 'rgba(253, 48, 76, 0.2)',
         borderColor: 'rgb(253, 48, 76)',
         pointBackgroundColor: 'rgb(253, 48, 76)'
