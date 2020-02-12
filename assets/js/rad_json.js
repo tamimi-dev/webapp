@@ -1,11 +1,33 @@
-(function() {
-  window.chartColors = {
-    red: "rgb(255, 99, 132)",
-    green: "rgb(75, 192, 192)",
-    blue: "rgb(54, 162, 235)"
-  };
-  $.getJSON("https://spreadsheets.google.com/feeds/list/1fgjVhzrbqcCOP8Zls00BV--JsIXEenwWmMD2iF8X9VE/ou32gi9/public/values?alt=json", function(data) {
+$.getJSON("https://spreadsheets.google.com/feeds/list/1fgjVhzrbqcCOP8Zls00BV--JsIXEenwWmMD2iF8X9VE/ou32gi9/public/values?alt=json", function(response) {
 
+  });
+
+
+var data = response.feed.entry,
+    len = data.length,
+    i = 0,
+    parsedData = [];
+
+for (i = 0; i < len; i++) {
+  parsedData.push({
+    label: data[i].gsx$countries.$t,
+    value: data[i].gsx$totcasepercntry.$t
+  });
+}
+
+var chartColors = {
+	red: 'rgba(253, 48, 76)',
+	orange: 'rgb(255, 159, 64)',
+	yellow: 'rgba(240,236,211)',
+	green: 'rgb(75, 192, 192)',
+	blue: 'rgba(42,105,163)',
+	purple: 'rgb(153, 102, 255)',
+	grey: 'rgba(48,48,50)'
+};
+
+
+
+var color = Chart.helpers.color;
 var config = {
   type: 'radar',
   data: {
@@ -18,13 +40,13 @@ var config = {
       backgroundColor: color(chartColors.red).alpha(0.2).rgbString(),
       borderColor: chartColors.red,
       pointBackgroundColor: chartColors.red,
-      data: [data.feed.entry[0]["gsx$countries"]["$t"]]
+      data: parsedData
     }, {
       label: "Goal level",
       backgroundColor: color(chartColors.blue).alpha(0.2).rgbString(),
       borderColor: chartColors.blue,
       pointBackgroundColor: chartColors.blue,
-      data: [data.feed.entry[1]["gsx$totcasepercntry"]["$t"]]
+      data: parsedData
     }, ]
   },
   options: {
@@ -69,5 +91,3 @@ Chart.plugins.register({
 })
 
 window.myRadar = new Chart(document.getElementById("canvas"), config);
-});
-  });
