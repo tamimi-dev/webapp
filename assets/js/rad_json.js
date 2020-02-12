@@ -22,7 +22,7 @@ var canvas = new Chart(ctx, {
               datasets: [{
                   label: 'Countries',
                   fill: false,
-                  data: reach,
+                  data: cntry,
                   borderColor: '#F3A68E',
                   borderWidth: 3,
                   backgroundColor: '#F3A68E',
@@ -30,7 +30,7 @@ var canvas = new Chart(ctx, {
               },{
                 label: 'Total Cases',
                 fill: false,
-                data: imp,
+                data: cntry_case,
                 borderColor: '#698C01',
                 borderWidth: 3,
                 backgroundColor: '#698C01',
