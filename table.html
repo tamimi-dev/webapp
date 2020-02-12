@@ -31,15 +31,14 @@
 						
 					    <!-- About -->
 						<div class="pb-3">
-		                    <h1 class="title title--h1 title__separate">Predicted VS Confirmed Cases*</h1>
-							  <ul class="list-inline">
-							<li><a class="test" href="#" data-toggle="tooltip" data-placement="right" title="According to China official numbers">*</a></li>
-  </ul>			
-<script>
-$(document).ready(function(){
-  $('[data-toggle="tooltip"]').tooltip();   
+		                    <h1 class="title title--h1 title__separate">Predicted VS Confirmed Cases<img src="https://tamimi-dev.github.io/app/assets/icons/info.png" title="According to China official numbers" data-toggle="tooltip" style="position:relative;right:-14px" width="20" height="20"></h1>
+							<script>
+$('a[data-toggle="tooltip"]').tooltip({
+    animated: 'fade',
+    placement: 'bottom',
+    html: true
 });
-</script>
+</script>		
 					    </div>
 				
 <table class="table table-striped table-dark">
