@@ -1,5 +1,6 @@
 
 $(function(){var sheetUrl = 'https://spreadsheets.google.com/feeds/list/1fgjVhzrbqcCOP8Zls00BV--JsIXEenwWmMD2iF8X9VE/ou32gi9/public/values?alt=json';$.getJSON(sheetUrl, function(data){
+	var sheetData = data.feed.entry;
 	var i;
       for (i = 0; i < sheetData.length; i++) {
 
