@@ -18,7 +18,7 @@ function BuildChart(labels, values, chartTitle) {
         }],
     };
 
-    var ctx = document.getElementById("myChart").getContext('2d');
+    var ctx = document.getElementById("canvas").getContext('2d');
     var myChart = new Chart(ctx, {
         type: 'horizontalBar',
         data: data,
