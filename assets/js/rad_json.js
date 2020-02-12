@@ -18,7 +18,7 @@ var ctx = document.getElementById("canvas").getContext('2d');
 var canvas = new Chart(ctx, {
           type: 'line',
           data: {
-              labels: cntry,
+              labels: "cntry",
               datasets: [{
                   label: 'Countries',
                   fill: false,
