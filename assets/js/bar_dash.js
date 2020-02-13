@@ -2,8 +2,8 @@ $.getJSON("https://spreadsheets.google.com/feeds/list/1fgjVhzrbqcCOP8Zls00BV--Js
   var labels = [];
   var numbers = [];
   data.feed.entry.forEach(e => {
-    labels.push(e['gsx$names']['$t']);
-    numbers.push(Number(e['gsx$numbers']['$t']));
+    labels.push(e['gsx$countries']['$t']);
+    numbers.push(Number(e['gsx$totcasepercntry']['$t']));
   });
   new Chart(document.getElementById('canvas'), {
     type: 'bar',
