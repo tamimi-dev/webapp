@@ -5,7 +5,7 @@ $.getJSON("https://spreadsheets.google.com/feeds/list/1fgjVhzrbqcCOP8Zls00BV--Js
   data.feed.entry.forEach(e => {
     labels.push(e['gsx$timecase']['$t']);
     numbers.push(Number(e['gsx$totcaseall']['$t']));
-    numbers2.push(Number(e['gsx$totcaseall']['$t']));
+    numbers2.push(Number(e['gsx$dincreaseall']['$t']));
   });
   new Chart(document.getElementById('canvas'), {
     type: 'horizontalBar',
