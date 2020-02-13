@@ -12,14 +12,14 @@ $.getJSON("https://spreadsheets.google.com/feeds/list/1fgjVhzrbqcCOP8Zls00BV--Js
     data: {
       labels: labels,
       datasets: [{
-        label: 'Daily Increase',
+        label: 'Total Cases (Accumulated)',
         data: numbers,
         backgroundColor: 'rgb(42,105,163)',
         borderColor: 'rgb(42,105,163)',
         pointBackgroundColor: 'rgb(240,236,211)'
       },
 {
-        label: 'Acc. Daily Total',
+        label: 'Daily Increase',
         data: numbers2,
         backgroundColor: 'rgb(253, 48, 76)',
         borderColor: 'rgb(253, 48, 76)',
