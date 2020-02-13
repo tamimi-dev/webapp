@@ -7,7 +7,7 @@ $.getJSON("https://spreadsheets.google.com/feeds/list/1fgjVhzrbqcCOP8Zls00BV--Js
     numbers.push(Number(e['gsx$percinc']['$t']));
 	numbers2.push(Number(e['gsx$dincreaseall']['$t']));
   });
-  new Chart(document.getElementById('canvas2'), {
+  new Chart(document.getElementById('canvas2').getContext("2d"), {
     type: 'horizontalBar',
     data: {
       labels: labels,
