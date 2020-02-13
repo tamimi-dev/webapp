@@ -5,7 +5,7 @@ $.getJSON("https://spreadsheets.google.com/feeds/list/1GnakUnNQvFXjuzMSPnBpU9euf
     labels.push(e['gsx$names']['$t']);
     numbers.push(Number(e['gsx$numbers']['$t']));
   });
-  new Chart(document.getElementById('canvas').getContext('2d'), {
+  new Chart(document.getElementById('canvas'), {
     type: 'bar',
     data: {
       labels: labels,
@@ -29,7 +29,12 @@ $.getJSON("https://spreadsheets.google.com/feeds/list/1GnakUnNQvFXjuzMSPnBpU9euf
 					  }
 					}]  
 
-    }
+    },
+      tooltips: {
+        callbacks: {
+          title: (tooltipItem, data) => data.labels[tooltipItem[0].index]
+        }
+      }
     }
   });
 });
