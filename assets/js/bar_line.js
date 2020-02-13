@@ -29,6 +29,12 @@ $.getJSON("https://spreadsheets.google.com/feeds/list/1fgjVhzrbqcCOP8Zls00BV--Js
 	  ]
     },
     options: {
+	    scales: {
+	    yAxes: [{
+	    type: 'logarithmic'
+	    }]
+    
+    },
       	  maintainAspectRatio: false,
       tooltips: {
         callbacks: {
