@@ -29,12 +29,7 @@ $.getJSON("https://spreadsheets.google.com/feeds/list/1GnakUnNQvFXjuzMSPnBpU9euf
 					  }
 					}]  
 
-    },
-      tooltips: {
-        callbacks: {
-          title: (tooltipItem, data) => data.labels[tooltipItem[0].index]
-        }
-      }
+    }
     }
   });
 });
