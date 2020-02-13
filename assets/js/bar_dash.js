@@ -12,7 +12,7 @@ $.getJSON("https://spreadsheets.google.com/feeds/list/1fgjVhzrbqcCOP8Zls00BV--Js
       datasets: [{
         label: 'Cases worldwide',
         data: numbers,
-        backgroundColor: 'rgba(253, 48, 76, 0.2)',
+        backgroundColor: 'rgb(253, 48, 76)',
         borderColor: 'rgb(253, 48, 76)',
         pointBackgroundColor: 'rgb(253, 48, 76)'
       }]
