@@ -6,7 +6,7 @@ $.getJSON("https://spreadsheets.google.com/feeds/list/1fgjVhzrbqcCOP8Zls00BV--Js
     numbers.push(Number(e['gsx$totcasepercntry']['$t']));
   });
   new Chart(document.getElementById('canvas'), {
-    type: 'bubble',
+    type: 'horizontalBar',
     data: {
       labels: labels,
       datasets: [{
