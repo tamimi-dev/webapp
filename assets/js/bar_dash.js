@@ -5,7 +5,7 @@ $.getJSON("https://spreadsheets.google.com/feeds/list/1GnakUnNQvFXjuzMSPnBpU9euf
     labels.push(e['gsx$names']['$t']);
     numbers.push(Number(e['gsx$numbers']['$t']));
   });
-  new Chart(document.getElementById('canvas'), {
+  new Chart(document.getElementById('canvas').getContext('2d'), {
     type: 'bar',
     data: {
       labels: labels,
