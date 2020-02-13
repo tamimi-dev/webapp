@@ -14,8 +14,8 @@ $.getJSON("https://spreadsheets.google.com/feeds/list/1fgjVhzrbqcCOP8Zls00BV--Js
       datasets: [{
         label: 'Daily % Change',
         data: numbers,
-        backgroundColor: 'rgb(75, 192, 192)',
-        borderColor: 'rgb(75, 192, 192)',
+        backgroundColor: 'rgb(153, 102, 255)',
+        borderColor: 'rgb(153, 102, 255)',
         pointBackgroundColor: 'rgb(240,236,211)',
 	 yAxisID: 'percent',
         type: 'line'
