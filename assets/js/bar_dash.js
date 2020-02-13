@@ -19,17 +19,6 @@ $.getJSON("https://spreadsheets.google.com/feeds/list/1GnakUnNQvFXjuzMSPnBpU9euf
     },
     options: {
       	  maintainAspectRatio: false,
-          scale: {
-			  yAxes: [{
-					  ticks: {
-						  
-						beginAtZero: true,
-						fontColor: 'white', // labels such as 10, 20, etc
-						showLabelBackdrop: false // hide square behind text
-					  }
-					}]  
-
-    },
       tooltips: {
         callbacks: {
           title: (tooltipItem, data) => data.labels[tooltipItem[0].index]
