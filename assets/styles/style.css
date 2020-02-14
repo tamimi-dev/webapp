@@ -53,6 +53,53 @@ table.table2 th {
   font-weight: 800;
 }
 
+table.table3 {
+  border-collapse: collapse;
+  border-radius: 1em;
+  overflow: hidden;
+  border: 0;
+}
+
+table.table3 td {
+  padding: 1em;
+  background: #c107ff;
+  color: #ffffff; 
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+table.table3 th {
+  padding: 1em;
+  background: #c107ff;
+  color: #ffffff; 
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+table.table4 {
+  border-collapse: collapse;
+  border-radius: 1em;
+  overflow: hidden;
+  border: 0;
+}
+
+table.table4 td {
+  padding: 1em;
+  background: #00a700;
+  color: #ffffff; 
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+table.table4 th {
+  padding: 1em;
+  background: #00a700;
+  color: #ffffff; 
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+
 .icon {
   background-size: contain;
   background-repeat: no-repeat;
