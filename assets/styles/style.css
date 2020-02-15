@@ -1368,6 +1368,12 @@ iframe {
   max-width: 80px;
   filter: drop-shadow(-2.5px 0 0 #fff) drop-shadow(3px 0 0 #fff) drop-shadow(0 -2px 0 #fff) drop-shadow(0 2px 0 #fff) drop-shadow(0 4px 4px rgba(134, 151, 168, 0.25)) drop-shadow(0 8px 8px rgba(134, 151, 168, 0.4));
 }
+
+.avatar--120 {
+  max-height: 120px;
+  max-width: 120px;
+  filter: drop-shadow(-2.5px 0 0 #fff) drop-shadow(3px 0 0 #fff) drop-shadow(0 -2px 0 #fff) drop-shadow(0 2px 0 #fff) drop-shadow(0 4px 4px rgba(134, 151, 168, 0.25)) drop-shadow(0 8px 8px rgba(134, 151, 168, 0.4));
+}
 @media only screen and (max-width: 580px) {
   .avatar--80 {
     max-height: 53.3333333333px;
