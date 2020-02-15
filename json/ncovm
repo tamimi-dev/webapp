@@ -49,13 +49,20 @@
         ]
       },
 	        {
-        "title":"Dashboard",
+        "title":"Cases Worldwide",
         "provider":"webview",
         "arguments":[
           "https://tamimi-dev.github.io/app/tot_cases_all.html"
         ]
       },
 	        {
+        "title":"Cases Worldwide",
+        "provider":"webview",
+        "arguments":[
+          "https://tamimi-dev.github.io/app/line_and_bar.html"
+        ]
+      },
+	  	        {
         "title":"Dashboard",
         "provider":"webview",
         "arguments":[
