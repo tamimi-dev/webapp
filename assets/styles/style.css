@@ -100,6 +100,32 @@ table.table4 th {
 }
 
 
+table.table5 {
+  border-collapse: collapse;
+  border-radius: 1em;
+  overflow: hidden;
+  border: 0;
+}
+
+table.table5 td {
+  padding: 1em;
+  background: #857575;
+  color: #ffffff; 
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+table.table5 th {
+  padding: 1em;
+  background: #857575;
+  color: #ffffff; 
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+
+
+
 .icon {
   background-size: contain;
   background-repeat: no-repeat;
