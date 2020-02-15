@@ -9,6 +9,6 @@ $.getJSON("https://spreadsheets.google.com/feeds/list/1fgjVhzrbqcCOP8Zls00BV--Js
         var cntry_case = data.feed.entry[i]['gsx$icontotcasepercntry']['$t'];
         var ico = data.feed.entry[i]['gsx$icon']['$t'];
 
-        document.getElementById('ico_cntry').innerHTML += ('<div class="box box__second">'+'<svg class="avatar avatar--120">'+'<g class="avatar__box">''<image xlink:href="https://tamimi-dev.github.io/app/assets/icons/cntry/'+ico+'.svg"'+' height="100%"'+'width="100%"></image></g></svg><div class="text-center"><h4 class="title title--h4 sidebar__user-name">'+cntry+'</h4></div><div class="text-center"><table class="table5" align="center"><tr><th>'+cntry_case+'</th></tr></table></div></div>');
+        document.getElementById('ico_cntry').innerHTML += ('<div class="box box__second">'+'<svg class="avatar avatar--120">'+'<g class="avatar__box">'+'<image xlink:href="https://tamimi-dev.github.io/app/assets/icons/cntry/'+ico+'.svg"'+' height="100%"'+'width="100%"></image></g></svg><div class="text-center"><h4 class="title title--h4 sidebar__user-name">'+cntry+'</h4></div><div class="text-center"><table class="table5" align="center"><tr><th>'+cntry_case+'</th></tr></table></div></div>');
       }
     });
