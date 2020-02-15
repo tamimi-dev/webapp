@@ -13,7 +13,7 @@
         ]
       },
       {
-        "title":"Suspected and Confirmed Cases",
+        "title":"Reported Cases",
         "provider":"webview",
         "arguments":[
           "https://tamimi-dev.github.io/app/susp_conf.html"
@@ -42,6 +42,13 @@
     "iap":false,
     "tabs":[
       {
+        "title":"Cases By Country",
+        "provider":"webview",
+        "arguments":[
+          "https://tamimi-dev.github.io/app/country_ico.html"
+        ]
+      },
+	        {
         "title":"Dashboard",
         "provider":"webview",
         "arguments":[
