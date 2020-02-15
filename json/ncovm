@@ -52,6 +52,13 @@
         "title":"Dashboard",
         "provider":"webview",
         "arguments":[
+          "https://tamimi-dev.github.io/app/tot_cases_all.html"
+        ]
+      },
+	        {
+        "title":"Dashboard",
+        "provider":"webview",
+        "arguments":[
           "https://tamimi-dev.github.io/app/dash.html"
         ]
       }
