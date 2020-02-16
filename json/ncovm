@@ -41,7 +41,14 @@
     "submenu":"",
     "iap":false,
     "tabs":[
-      {
+           {
+        "title":"China VS Worldwide Cases",
+        "provider":"webview",
+        "arguments":[
+          "https://tamimi-dev.github.io/app/china_nochina.html"
+        ]
+      },
+	 {
         "title":"Cases By Country",
         "provider":"webview",
         "arguments":[
