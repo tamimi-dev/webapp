@@ -85,6 +85,21 @@
       }
     ]
   },
+    {
+    "title":"Corona Map",
+    "drawable":"",
+    "submenu":"",
+    "iap":false,
+    "tabs":[
+           {
+        "title":"3D map",
+        "provider":"webview",
+        "arguments":[
+          "https://tamimi-dev.github.io/app/test/rotating_map_test.html"
+        ]
+      }
+    ]
+  },
   {
     "title":"About",
     "drawable":"",
