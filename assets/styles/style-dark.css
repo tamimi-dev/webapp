@@ -163,7 +163,7 @@ select option,
 }
 
 .avatar--180 {
-filter: drop-shadow(0 0 0.25rem #ad000e);
+filter: drop-shadow(0 0 0.25rem #170b0c);
 }
 .avatar--80 {
   filter: drop-shadow(0px 8px 24px rgba(31, 31, 31, 1)) drop-shadow(0px 4px 4px rgba(31, 31, 31, 1));
