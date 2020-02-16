@@ -132,6 +132,6 @@ polygonSeries.events.on("inited", function () {
 
 
 var data = {
-  "CN": 68,502,
+  "CN": 68502,
   "JP": 100
 }
