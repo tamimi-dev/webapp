@@ -12,7 +12,8 @@ $.getJSON("https://spreadsheets.google.com/feeds/list/1GnakUnNQvFXjuzMSPnBpU9euf
         id: "gauge",
         value: numbers,
         min: 10,
-        max: 45,
+        max: 60,
         title: "Lone Ranger",
         label: "miles traveled"
- });
+      });
+});
