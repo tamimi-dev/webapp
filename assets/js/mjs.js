@@ -7,7 +7,6 @@ $.getJSON("https://spreadsheets.google.com/feeds/list/1fgjVhzrbqcCOP8Zls00BV--Js
 
         var score = data.feed.entry[i]['gsx$score']['$t'];
         var crit = data.feed.entry[i]['gsx$crit']['$t'];
-        var critb = data.feed.entry[i]['gsx$critb']['$t'];
         var one = data.feed.entry[i]['gsx$one']['$t'];
         var two = data.feed.entry[i]['gsx$two']['$t'];
         var three = data.feed.entry[i]['gsx$three']['$t'];
