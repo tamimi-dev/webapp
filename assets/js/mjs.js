@@ -18,6 +18,3 @@ $.getJSON("https://spreadsheets.google.com/feeds/list/1fgjVhzrbqcCOP8Zls00BV--Js
 
       }
     });
-    
-    
-    
