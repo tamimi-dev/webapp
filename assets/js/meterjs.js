@@ -1,10 +1,10 @@
-$.getJSON("https://spreadsheets.google.com/feeds/list/1GnakUnNQvFXjuzMSPnBpU9eufb4SooQLGL2oFc3lfAs/olnmcfa/public/values?alt=json", data => {
+$.getJSON("https://spreadsheets.google.com/feeds/list/1fgjVhzrbqcCOP8Zls00BV--JsIXEenwWmMD2iF8X9VE/o3brp63/public/values?alt=json", data => {
 
   var numbers = [];
 
   data.feed.entry.forEach(e => {
 
-    numbers.push(Number(e['gsx$guavalue']['$t']));
+    numbers.push(Number(e['gsx$value']['$t']));
 
   }); 
 
@@ -12,7 +12,7 @@ $.getJSON("https://spreadsheets.google.com/feeds/list/1GnakUnNQvFXjuzMSPnBpU9euf
         id: "gauge",
         value: numbers,
         min: 10,
-        max: 60,
+        max: 48,
         title: "Lone Ranger",
         label: "miles traveled"
       });
