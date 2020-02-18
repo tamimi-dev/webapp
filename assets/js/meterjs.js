@@ -15,4 +15,4 @@ $.getJSON("https://spreadsheets.google.com/feeds/list/1GnakUnNQvFXjuzMSPnBpU9euf
         max: 45,
         title: "Lone Ranger",
         label: "miles traveled"
-      });
+ });
