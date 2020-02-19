@@ -55,6 +55,13 @@
           "https://tamimi-dev.github.io/app/country_ico.html"
         ]
       },
+	  	 {
+        "title":"PHEIC",
+        "provider":"webview",
+        "arguments":[
+          "https://tamimi-dev.github.io/app/meter.html"
+        ]
+      },
 	        {
         "title":"Cases Worldwide",
         "provider":"webview",
