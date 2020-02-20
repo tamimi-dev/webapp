@@ -234,6 +234,119 @@ table.table_c tr:nth-child(6) {
 
 
 
+
+ /* cdc accordion style */
+ 
+ 
+ .accordion .card1 .card-header{
+  background: #CE2029;
+} 
+
+
+ .accordion .card2 .card-header{
+  background: #FCB514;
+} 
+
+ .accordion .card3 .card-header{
+  background: #77933c;
+} 
+
+h51 {
+  color: white;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+ /* cdc table js */
+
+table.table_w {
+  border-collapse: separate;
+  border-radius: .9em;
+  overflow: hidden;
+  border: 2;
+  table-layout: auto;
+}
+
+
+table.table_w td {
+  padding: 1em;
+  font-size: .9rem;
+  font-weight: 150;
+  table-layout: auto;
+  color: #ffffff; 
+}
+
+
+table.table_w th {
+  padding: 1em;
+  background: #2b2b2b;
+  color: #ffffff; 
+  font-size: .9rem;
+  font-weight: 200;
+  table-layout: auto;
+}
+
+
+
+
+ /* cdc table info */
+
+table.table_cdc {
+  border-collapse: separate;
+  border-radius: .9em;
+  overflow: hidden;
+  border: 2;
+}
+
+table.table_cdc td {
+  padding: 1em;
+  font-size: .7rem;
+  font-weight: 150;
+  
+}
+
+table.table_cdc th {
+  padding: 1em;
+  background: #2b2b2b;
+  color: #ffffff; 
+  font-size: .8rem;
+  font-weight: 200;
+}
+
+table.table_cdc tr:nth-child(1) {
+  background-color: #CE2029;
+    color: #fff; 
+}
+table.table_cdc tr:nth-child(2) {
+  background-color: #FCB514;
+    color: #000; 
+}
+table.table_cdc tr:nth-child(3) {
+  background-color: #77933c;
+    color: #fff; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .icon {
   background-size: contain;
   background-repeat: no-repeat;
