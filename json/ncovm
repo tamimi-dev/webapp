@@ -62,6 +62,13 @@
           "https://tamimi-dev.github.io/app/meter.html"
         ]
       },
+	  {
+        "title":"Travel Health Notices",
+        "provider":"webview",
+        "arguments":[
+          "https://tamimi-dev.github.io/app/cdc_t.html"
+        ]
+      },
 	        {
         "title":"Cases Worldwide",
         "provider":"webview",
