@@ -76,15 +76,21 @@
           "https://tamimi-dev.github.io/app/tot_cases_all.html"
         ]
       },
-	        {
+	   {
         "title":"Cases Worldwide",
         "provider":"webview",
         "arguments":[
           "https://tamimi-dev.github.io/app/line_and_bar.html"
         ]
+      },{
+        "title":"Trending Tweets",
+        "provider":"webview",
+        "arguments":[
+          "https://tamimi-dev.github.io/app/tweet.html"
+        ]
       },
-	  	        {
-        "title":"Dashboard",
+	  	 {
+        "title":"Additional Dashboards",
         "provider":"webview",
         "arguments":[
           "https://tamimi-dev.github.io/app/dash.html"
