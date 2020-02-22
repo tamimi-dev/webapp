@@ -365,8 +365,8 @@ a:hover {
 */
 
 ul li {
-  position: relative;
-  left: -5%;
+/*  position: relative;
+  left: -5%; */
   border-radius: 6px;
   list-style:none;
   overflow:hidden;
