@@ -129,7 +129,7 @@ fetch("https://spreadsheets.google.com/feeds/list/1fgjVhzrbqcCOP8Zls00BV--JsIXEe
   const mapData = {}
 
   jsonData.feed.entry.forEach(e => {
-    mapData[e['gsx$icon']['$t']] = Number(e['gsx$icontotcasepercntry']['$t'])
+    mapData[e['gsx$rotateid']['$t']] = Number(e['gsx$rotatcase']['$t'])
   })
   handleMapData(mapData)
 })
