@@ -4,7 +4,7 @@
 var configProfile = {
   "profile": {"screenName": 'V2019N'},
   "domId": 'tweet',
-  "maxTweets": 5,
+  "maxTweets": 13,
   "enableLinks": false, 
   "showUser": true,
   "showTime": true,
