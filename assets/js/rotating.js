@@ -101,6 +101,18 @@ chart.seriesContainer.events.on("down", function() {
   }
 })
 
+
+
+fetch("https://spreadsheets.google.com/feeds/list/1fgjVhzrbqcCOP8Zls00BV--JsIXEenwWmMD2iF8X9VE/o512ru7/public/values?alt=json").then(response => response.json()).then((jsonData) => {
+  const mapData = {}
+
+  jsonData.feed.entry.forEach(e => {
+    mapData[e['gsx$rotateid']['$t']] = Number(e['gsx$rotatcase']['$t'])
+  })
+  handleMapData(mapData)
+})
+
+
 const handleMapData = (mapData) => {
   polygonSeries.mapPolygons.each(function(mapPolygon) {
     var count = mapData[mapPolygon.id];
@@ -125,11 +137,3 @@ const handleMapData = (mapData) => {
   })
 }
 
-fetch("https://spreadsheets.google.com/feeds/list/1fgjVhzrbqcCOP8Zls00BV--JsIXEenwWmMD2iF8X9VE/o512ru7/public/values?alt=json").then(response => response.json()).then((jsonData) => {
-  const mapData = {}
-
-  jsonData.feed.entry.forEach(e => {
-    mapData[e['gsx$rotateid']['$t']] = Number(e['gsx$rotatcase']['$t'])
-  })
-  handleMapData(mapData)
-})
