@@ -4,7 +4,7 @@
 var configProfile = {
   "profile": {"screenName": 'tracker_corona'},
   "domId": 'tweet',
-  "maxTweets": 13,
+  "maxTweets": 50,
   "enableLinks": false, 
   "showUser": true,
   "showTime": true,
