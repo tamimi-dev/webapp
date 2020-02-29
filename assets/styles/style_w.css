@@ -570,7 +570,7 @@ html.is-scroll-disabled body {
 }
 
 .bg-triangles {
-  background-image: url(../images/2-top.svg), url(../images/2-bottom.svg);
+  background-image: url(../assets/img/bk.svg), url(../assets/img/bk.svg);
   background-position: left top, right bottom;
   background-repeat: no-repeat;
   background-size: inherit;
