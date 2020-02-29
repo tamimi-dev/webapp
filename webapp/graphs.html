@@ -15,8 +15,8 @@
     <meta name="description" content="Tracker">
 
     <!-- Styles -->
-	<link rel="stylesheet" type="text/css" href="https://tamimi-dev.github.io/app/assets/styles/style_w.css">
-    <link rel="stylesheet" type="text/css" href="https://tamimi-dev.github.io/app/assets/styles/style-dark_w.css">
+	<link rel="stylesheet" type="text/css" href="../assets/styles/style_w.css">
+    <link rel="stylesheet" type="text/css" href="../assets/styles/style-dark_w.css">
 
 
 
@@ -24,7 +24,7 @@
 	
 </head>
 <body class="bg-triangles">
-        <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: #353438;">
+       <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: #353438;">
   <a class="navbar-brand" href="#"><img src="../assets/img/icon.png" width="50" height="50" alt="">Corona Tracker App</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,7 +41,7 @@
       <li class="nav-item">
         <a class="nav-link" href="../webapp/notices.html">Notices</a>
       </li>
-            <li class="nav-item active">
+            <li class="nav-item" active>
         <a class="nav-link" href="#">Graphs</a>
       </li>
 
@@ -73,8 +73,6 @@
     
 
   </div>
-</nav>
-
 
     <!-- Preload -->
 
@@ -261,37 +259,49 @@
 
  <div class="col-12 col-lg-12">
 
-     
-   
-   
 
-
-   
-   
-
-   
-   
-   
    <div class="pb-3">
    
-    <h1 class="title title--h1 title__separate">Public Health Emergency of International Concern (PHEIC)</h1>
-							<script>
-$('a[data-toggle="tooltip"]').tooltip({
-    animated: 'fade',
-    placement: 'bottom',
-    html: true
-});
-</script>		
-		                   
+    <h1 class="title title--h1 title__separate">Worldwide Cases</h1>
+             <h2 class="title title--h3">Daily Increase and Accumulated Cases</h2>    
 					    </div>
               
               
               
-   
+   <div class="box box__second">
+<div class="wrapper">
+	
+<canvas id="canvas"></canvas>
+</div>
+
+									</div>
      <!-- Row meter start-->
      
+     <h2 class="title title--h3">% Daily Change (Logarithmic Scale)</h2>
 
-         <canvas id="canvas"></canvas>
+    <div class="box box__second">
+<div class="wrapper">
+	
+<canvas id="canvas2"></canvas>
+</div>
+
+									</div>
+
+
+
+
+<h2 class="title title--h3">Positive/Negative changes</h2>
+<div class="box box__second">
+<div class="box box__second">
+<div class="wrapper">
+	
+  <div id="chart-area">
+
+  </div>
+  <div id="chart-bar">
+
+  </div>
+
           <!-- Row meter start-->
    			</div>
 			
@@ -320,58 +330,6 @@ $('a[data-toggle="tooltip"]').tooltip({
 
 
 
-		    <div class="box shadow pb-0">
-					    <!-- Menu -->
-						
-
-            
-            
-					    <!-- Title -->
-
-
-<div class="box-inner box-inner--rounded">
-
- <div class="col-12 col-lg-12">
-
-     
-   
-  
-   
-   
-   <div class="pb-3">
-   
-    <h1 class="title title--h1 title__separate">Public Health Emergency of International Concern (PHEIC)</h1>
-
-					    </div>
-              
-              
-              
-   
-     <!-- Row meter start-->
-     
-
-         
-          <!-- Row meter start-->
-   			</div>
-			
-		    </div> 	
-			
-			
-
-			
-			
-			
- 
-
-   
- 
-			
-  	
-
-   
-   
-  </div>
-			
 
 
 </div>						
@@ -391,16 +349,18 @@ $('a[data-toggle="tooltip"]').tooltip({
 
 
 	<!-- JavaScripts -->
-	<script src="https://tamimi-dev.github.io/app/assets/js/web/jquery-3.4.1.min.js"></script>
-	<script src="https://tamimi-dev.github.io/app/assets/js/web/plugins.js"></script>
-    <script src="https://tamimi-dev.github.io/app/assets/js/web/common.js"></script>
-<script src="https://tamimi-dev.github.io/app/assets/js/web/djs_n.js"></script>
-	<script src="https://tamimi-dev.github.io/app/assets/js/web/scdjs.js"></script>
-	<script src="https://tamimi-dev.github.io/app/assets/js/web/reserjs.js"></script> 
+	<script src="../assets/js/web/jquery-3.4.1.min.js"></script>
+	<script src="../assets/js/web/plugins.js"></script>
+    <script src="../assets/js/web/common.js"></script>
+<script src="../assets/js/web/djs_n.js"></script>
+	<script src="../assets/js/web/scdjs.js"></script>
+	<script src="../assets/js/web/reserjs.js"></script> 
 
-    <script src="https://tamimi-dev.github.io/app/assets/js/Chart.bundle.min.js"></script>
-	<script src="https://tamimi-dev.github.io/app/assets/js/bar_2_dash.js"></script>
-	<script src="https://tamimi-dev.github.io/app/assets/js/bar_line.js"></script>
+    <script src="../assets/js/web/Chart.bundle.min.js"></script>
+	<script src="../assets/js/web/bar_2_dash.js"></script>
+	<script src="../assets/js/web/bar_line.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="../assets/js/web/line_bar.js"></script>
 
 
 
