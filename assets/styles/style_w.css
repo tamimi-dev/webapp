@@ -363,21 +363,7 @@ a:hover {
 }
 */
 
-ul li {
- position: relative;
-  left: -7%; 
-  border-radius: 6px;
-  list-style:none;
-  overflow:hidden;
-  border:0.5px solid #4a4a4d;
-  margin:4px;
-  padding:5px;
-}
 
-
-ul li:hover {
-  background-color:#821d1d;
-}
 
 .user, .tweet, .timePosted {
   float:bottom;
