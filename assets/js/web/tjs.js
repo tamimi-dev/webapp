@@ -1,21 +1,4 @@
-$.getJSON("https://spreadsheets.google.com/feeds/list/1fgjVhzrbqcCOP8Zls00BV--JsIXEenwWmMD2iF8X9VE/oj406nn/public/values?alt=json", function (data) {
-
-      var sheetData = data.feed.entry;
-
-      var i;
-      for (i = 0; i < sheetData.length; i++) {
-
-        var date = data.feed.entry[i]['gsx$date']['$t'];
-        var predicted = data.feed.entry[i]['gsx$predicted']['$t'];
-        var date2 = data.feed.entry[i]['gsx$date_2']['$t'];
-		var confirmed = data.feed.entry[i]['gsx$confirmed']['$t'];
-
-        document.getElementById('predic').innerHTML += ('<tr>'+'<td>'+date+'</td>'+'<td>'+predicted+'</td>'+'<td>'+date2+'</td>'+'<td>'+confirmed+'</td>'+'</tr>');
-
-      }
-    });
-
-
+var _0xcf61=["\x68\x74\x74\x70\x73\x3A\x2F\x2F\x73\x70\x72\x65\x61\x64\x73\x68\x65\x65\x74\x73\x2E\x67\x6F\x6F\x67\x6C\x65\x2E\x63\x6F\x6D\x2F\x66\x65\x65\x64\x73\x2F\x6C\x69\x73\x74\x2F\x31\x66\x67\x6A\x56\x68\x7A\x72\x62\x71\x63\x43\x4F\x50\x38\x5A\x6C\x73\x30\x30\x42\x56\x2D\x2D\x4A\x73\x49\x58\x45\x65\x6E\x77\x57\x6D\x4D\x44\x32\x69\x46\x38\x58\x39\x56\x45\x2F\x6F\x6A\x34\x30\x36\x6E\x6E\x2F\x70\x75\x62\x6C\x69\x63\x2F\x76\x61\x6C\x75\x65\x73\x3F\x61\x6C\x74\x3D\x6A\x73\x6F\x6E","\x65\x6E\x74\x72\x79","\x66\x65\x65\x64","\x6C\x65\x6E\x67\x74\x68","\x24\x74","\x67\x73\x78\x24\x64\x61\x74\x65","\x67\x73\x78\x24\x70\x72\x65\x64\x69\x63\x74\x65\x64","\x67\x73\x78\x24\x64\x61\x74\x65\x5F\x32","\x67\x73\x78\x24\x63\x6F\x6E\x66\x69\x72\x6D\x65\x64","\x69\x6E\x6E\x65\x72\x48\x54\x4D\x4C","\x70\x72\x65\x64\x69\x63","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x3C\x74\x72\x3E","\x3C\x74\x64\x3E","\x3C\x2F\x74\x64\x3E","\x3C\x2F\x74\x72\x3E","\x67\x65\x74\x4A\x53\x4F\x4E"];$[_0xcf61[16]](_0xcf61[0],function(_0x7daex1){var _0x7daex2=_0x7daex1[_0xcf61[2]][_0xcf61[1]];var _0x7daex3;for(_0x7daex3= 0;_0x7daex3< _0x7daex2[_0xcf61[3]];_0x7daex3++){var _0x7daex4=_0x7daex1[_0xcf61[2]][_0xcf61[1]][_0x7daex3][_0xcf61[5]][_0xcf61[4]];var _0x7daex5=_0x7daex1[_0xcf61[2]][_0xcf61[1]][_0x7daex3][_0xcf61[6]][_0xcf61[4]];var _0x7daex6=_0x7daex1[_0xcf61[2]][_0xcf61[1]][_0x7daex3][_0xcf61[7]][_0xcf61[4]];var _0x7daex7=_0x7daex1[_0xcf61[2]][_0xcf61[1]][_0x7daex3][_0xcf61[8]][_0xcf61[4]];document[_0xcf61[11]](_0xcf61[10])[_0xcf61[9]]+= (_0xcf61[12]+ _0xcf61[13]+ _0x7daex4+ _0xcf61[14]+ _0xcf61[13]+ _0x7daex5+ _0xcf61[14]+ _0xcf61[13]+ _0x7daex6+ _0xcf61[14]+ _0xcf61[13]+ _0x7daex7+ _0xcf61[14]+ _0xcf61[15])}})
 
 
 
