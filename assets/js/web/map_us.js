@@ -1,5 +1,5 @@
 
- 
+ fetchData("https://spreadsheets.google.com/feeds/list/12Lyd3k0PRpe-Ie_LaeJaEPm3FwF3iz1gizAOSprn7l0/on897vi/public/values?alt=json");
 async function fetchData(url) {
   const jsonData = await fetch(url).then(r => r.json());
   const data = jsonData.feed.entry.map(e => ({
@@ -19,7 +19,7 @@ function handleData(data) {
     polygonSeries.data = data;
 }
 
-fetchData("https://spreadsheets.google.com/feeds/list/12Lyd3k0PRpe-Ie_LaeJaEPm3FwF3iz1gizAOSprn7l0/on897vi/public/values?alt=json");
+
 
 
 
