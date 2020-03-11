@@ -1,3 +1,4 @@
+fetchData("https://spreadsheets.google.com/feeds/list/12Lyd3k0PRpe-Ie_LaeJaEPm3FwF3iz1gizAOSprn7l0/on897vi/public/values?alt=json");
 
  
 async function fetchData(url) {
@@ -20,7 +21,6 @@ function handleData(data) {
 }
 
 
-fetchData("https://spreadsheets.google.com/feeds/list/12Lyd3k0PRpe-Ie_LaeJaEPm3FwF3iz1gizAOSprn7l0/on897vi/public/values?alt=json");
 
 
 
@@ -90,3 +90,4 @@ polygonTemplate.strokeWidth = 0.5;
 // Create hover state and set alternative fill color
 var hs = polygonTemplate.states.create("hover");
 hs.properties.fill = am4core.color("#dc3c3c");
+
