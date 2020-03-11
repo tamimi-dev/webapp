@@ -1,3 +1,6 @@
+
+
+
 // Themes begin
 am4core.useTheme(am4themes_dark);
 am4core.useTheme(am4themes_animated);
@@ -83,3 +86,7 @@ polygonTemplate.strokeWidth = 0.5;
 // Create hover state and set alternative fill color
 var hs = polygonTemplate.states.create("hover");
 hs.properties.fill = am4core.color("#dc3c3c");
+
+
+
+
