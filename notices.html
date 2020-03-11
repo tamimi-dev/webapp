@@ -47,7 +47,7 @@
 	
 </head>
 <body class="bg-triangles">
-       <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: #353438;">
+      <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: #353438;">
  <a class="navbar-brand" href="/"><img src="../assets/img/icon.png" width="50" height="50" alt="">Corona Tracker App</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,21 +58,27 @@
       <li class="nav-item">
         <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
       </li>
+              <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">Graphs</a>
+        <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="../world.html">WorldWide</a>
+          <a class="dropdown-item" href="../china.html">China</a>
+          <a class="dropdown-item" href="../us.html">US</a>
+          <a class="dropdown-item" href="../canada.html">Canada</a>
+		      <a class="dropdown-item" href="../australia.html">Australia</a>
+			    <a class="dropdown-item" href="../samerica.html">South America</a>
+        </div>
+      </li>
       <li class="nav-item">
-        <a class="nav-link" href="../3d_map.html">3D Map</a>
-      </li>
-      <li class="nav-item active">
         <a class="nav-link" href="../notices.html">Notices</a>
-      </li>
+
             <li class="nav-item">
-        <a class="nav-link" href="../graphs.html">Graphs</a>
-      </li>
-            <li class="nav-item ">
         <a class="nav-link" href="../about.html">About</a>
       </li>
 
     </ul>
-   <ul class="navbar-nav ml-auto nav-flex-icons">
+    <ul class="navbar-nav ml-auto nav-flex-icons">
       <li class="nav-item avatar">
         <a class="nav-link p-0 waves-effect waves-light" href="http://patreon.com/coronatracker">
           <img src="../assets/img/patreon.svg" class="rounded-circle z-depth-0"
