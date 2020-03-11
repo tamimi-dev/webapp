@@ -31,7 +31,7 @@ am4core.useTheme(am4themes_animated);
 // Themes end
 
  // Create map instance
-var chart = am4core.create("chartdiv_m", am4maps.MapChart);
+var chart = am4core.create("chartdiv", am4maps.MapChart);
 
 // Set map definition
 chart.geodata = am4geodata_usaLow;
