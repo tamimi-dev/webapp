@@ -30,12 +30,7 @@
 <link rel="icon" type="image/png" sizes="96x96" href="../assets/favicons/favicon-96x96.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicons/favicon-16x16.png">
 <link rel="manifest" href="../assets/favicons/manifest.json">
-	<!-- Favicons  
-	<link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicons/favicon-16x16.png">
-	<link rel="manifest" href="../assets/images/favicons/site.webmanifest">
--->
+
 
     <!-- Styles -->
 		<link rel="stylesheet" type="text/css" href="https://coronatrackers.com/assets/styles/style_w.css">
@@ -48,9 +43,7 @@
 	
 </head>
 <body class="bg-triangles">
-         
-		 
-		 <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: #353438;">
+          <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: #353438;">
  <a class="navbar-brand" href="/"><img src="../assets/img/icon.png" width="50" height="50" alt="">Corona Tracker App</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -108,10 +101,6 @@
 
   </div>
 </nav>
-
-
-
-
     <!-- Preload -->
 
 
@@ -309,23 +298,49 @@
    
    
    <div class="pb-3">
-		                    <h1 class="title title--h1 title__separate">Coming Soon</h1>      
+		                    <h1 class="title title--h1 title__separate">United State</h1>      
 					    </div>
    
-     <!-- Row 3D start-->
-     
-  <div class="row">
+	 
+	   <div class="row">
 
 <div class="col-lg-12 col-xl-12">           
               <div class="box box__second">
-<h2 class="title title--h3">----</h2>
+<h2 class="title title--h3">US Map</h2>
 
  
  <div class="text-center">
 
 <div class="box box__second">
 
+ <div id="chartdiv_m"></div>
+</div>
 
+</div>
+
+</div>
+          
+         </div>
+</div>
+	 
+	 
+	 
+	 
+     <!-- Row 3D start-->
+     
+  <div class="row">
+
+<div class="col-lg-12 col-xl-12">           
+              <div class="box box__second">
+<h2 class="title title--h3">US Numbers</h2>
+
+ 
+ <div class="text-center">
+
+<div class="box box__second">
+
+ <div id="chart_s"></div>
+</div>
 
 </div>
 
@@ -334,7 +349,34 @@
          </div>
 </div>
         
-
+          <!-- Row 3D end-->
+		  
+	
+	 
+	        <!-- Pie bar start -->
+		   <div class="row">
+      
+ <div class="col-lg-12 col-xl-12">           
+              <div class="box box__second">
+<h2 class="title title--h3">US numbers per state</h2>
+ <div class="text-center">
+<div id="chartdiv"></div>
+</div>
+</div>
+          
+         </div>     
+      
+      
+      
+      
+      
+       </div> 
+       
+           <!-- Pie bar end --> 
+	 
+	 
+	
+		  
 		  
 		  
 		  
@@ -375,14 +417,17 @@
     <script src="../assets/js/web/common.js"></script>
 <script src="../assets/js/web/all_scd.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-
+<script src="../assets/js/web/us_stack.js"></script>
 <script src="../assets/js/amcharts/core.js"></script>
+	<script src="../assets/js/amcharts/charts.js"></script>
 <script src="../assets/js/amcharts/maps.js"></script>
 <script src="../assets/js/amcharts/worldLow.js"></script>
+	<script src="../assets/js/amcharts/cntry/usaLow.js"></script>
 <script src="../assets/js/amcharts/material.js"></script>
+	<script src="../assets/js/amcharts/dark.js"></script>
 <script src="../assets/js/amcharts/animated.js"></script>
-
-
+	<script src="../assets/js/web/map_us.js"></script>
+<script src="../assets/js/web/piebar_u.js"></script>
 
 </body>
 
