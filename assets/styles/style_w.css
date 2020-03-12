@@ -8,8 +8,8 @@
 
 @font-face {
     font-family: 'ticking_timebomb_bbregular';
-    src: url('../fonts/clock-webfont.woff') format('woff2'),
-         url('../fonts/clock-webfont.woff') format('woff');
+    src: url('fonts/clock-webfont.woff') format('woff2'),
+         url('fonts/clock-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
