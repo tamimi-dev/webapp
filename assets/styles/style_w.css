@@ -7,7 +7,7 @@
 /* Clock */
 @font-face{
  font-family:'clock';
- src: local('../assets/fonts/clock.ttf');
+ src: url('https://www.coronatrackers.com/assets/fonts/clock.ttf');
 }
 
 .clock {
