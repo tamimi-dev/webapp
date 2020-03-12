@@ -7,7 +7,7 @@
 /* Clock */
 @font-face{
  font-family:'clock';
- src: url('../assets/fonts/clock.ttf');
+ src: local('../assets/fonts/clock.ttf');
 }
 
 .clock {
