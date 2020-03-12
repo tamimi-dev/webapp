@@ -9,7 +9,7 @@
 @font-face {
     font-family: 'ticking_timebomb_bbregular';
     src: url('../assets/fonts/clock-webfont.woff2') format('woff2'),
-         url('/assets/fonts/clock-webfont.woff') format('woff');
+         url('../assets/fonts/clock-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
