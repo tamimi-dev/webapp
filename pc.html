@@ -151,6 +151,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </nav>
     <!-- Preload -->
 
+	 <script>
+       $(window).bind("load", function () {
+        $('#work-in-progress').fadeOut(100);
+    });
+      </script>
+
+
+      <div id="work-in-progress">
+   <div class="preloader">
+	    <div class="preloader__wrap">
+		    <div class="circle-pulse">
+                <div class="circle-pulse__1"></div>
+                <div class="circle-pulse__2"></div>
+            </div>
+		    <div class="preloader__progress"><span></span></div>
+		</div>
+	</div>
+      </div>
+	
+	
+	
+	
 
     <main class="main">
 	    <div class="col-12 col-sm-12 col-md-12 col-xl-12 container gutter-top">
@@ -235,7 +257,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 	<script src="../assets/js/web/chert.js"></script>
 	<script src="../assets/js/web/clck.js"></script> 
-  
+  <script src="../assets/js/progressbar.min.js"></script>
 </body>
 
 </html>
