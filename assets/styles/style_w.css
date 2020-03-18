@@ -1202,6 +1202,15 @@ img {
   user-select: none;
 }
 
+img_logo {
+  max-width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
 iframe {
   background-color: #44566C;
   border: 0;
