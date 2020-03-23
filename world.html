@@ -231,12 +231,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
    <div class="pb-3">
    
-    <h1 class="title title--h1 title__separate">Worldwide Cases</h1>
+    <h1 class="title title--h1 title__separate">Worldwide Cases and Deaths</h1>
        <!--      <h2 class="title title--h3">Daily Increase and Accumulated Cases</h2>    -->
 					    </div>
               
               
-          
+      <h2 class="title title--h3">Accumulated Total Cases and Daily Increase</h2>    
    <div class="box box__second">
 <div class="wrapper">
 	
@@ -244,6 +244,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 
 									</div>
+									
+									
+								      <h2 class="title title--h3">Accumulated Total Deaths and Daily Increase</h2>    
+   <div class="box box__second">
+<div class="wrapper">
+	
+<canvas id="canvas_dth"></canvas>
+</div>
+
+									</div>	
+									
+									
+									
      <!-- Row meter start -->
      
      <h2 class="title title--h3">% Daily Change (Logarithmic Scale)</h2>
@@ -480,6 +493,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <script src="../assets/js/web/Chart.bundle.min.js"></script>
 	<script src="../assets/js/web/bar_2_dash.js"></script>
+		<script src="../assets/js/web/bar_2_dash_dth.js"></script>
 	<script src="../assets/js/web/bar_line.js"></script>
 
        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
