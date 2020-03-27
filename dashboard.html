@@ -51,6 +51,9 @@
     <link rel="stylesheet" type="text/css" href="../assets/styles/style-dark_w.css">
 <link rel="stylesheet" type="text/css" href="../assets/styles/style-tl_dash.css">
 
+<link rel="stylesheet" type="text/css" href="../assets/js/datatable/css/dataTables.bootstrap4.min.css"/>
+<link rel="stylesheet" type="text/css" href=".../assets/js/datatable/css/responsive.bootstrap4.min.css"/>	
+	
 <script data-ad-client="ca-pub-6520664024708422" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 	<script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="coronatrackers" data-description="Support the service" data-message="Thank you for your support!" data-color="#FF5F5F" data-position="right" data-x_margin="15" data-y_margin="15"></script>	
@@ -946,11 +949,55 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
  <div class="col-12 col-lg-12">
 
       
+   <table id="globe" class="table_datatable" align="center">
+      
+
+ <thead>
+            <tr>
+
+                  <th>-</th>
+                <th>Country</th>
+                <th>Total Cases</th>
+                <th>Today's Cases</th>
+                <th>Deaths</th>
+                <th>Today's Deaths</th>
+                <th>Recovered</th>
+                <th>Serious</th>
+		                    <th>Fatality Rate</th>
+                <th>Recovery Rate</th>
+            </tr>
+        </thead>
+
+      <tfoot>
+
+                    <th>-</th>
+                <th>Country</th>
+                <th>Total Cases</th>
+                <th>Today's Cases</th>
+                <th>Deaths</th>
+                <th>Today's Deaths</th>
+                <th>Recovered</th>
+                <th>Serious</th>
+	      		                    <th>Fatality Rate</th>
+                <th>Recovery Rate</th>
+
+  </tfoot>
+
+
+ <tbody>
+  
+  </tbody>
+
+
+
+</table>
+	 
+	 
    
-    <div id= "ico_cntry" class="row">
+   <!-- <div id= "ico_cntry" class="row">
  
           
-         </div>
+         </div> -->
  
    
  
@@ -1014,7 +1061,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<script src="../assets/js/web/plugins.js"></script>
     <script src="../assets/js/web/common.js"></script>
 	<script src="../assets/js/web/all_scd.js"></script>
-<script src="../assets/js/web/icojsdash.js"></script>
+
+
+<script type="text/javascript" src="../assets/js/datatable/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="../assets/js/datatable/js/dataTables.bootstrap4.min.js"></script>
+<script type="text/javascript" src="../assets/js/datatable/js/dataTables.responsive.min.js"></script>
+<script type="text/javascript" src="../assets/js/datatable/js/responsive.bootstrap4.min.js"></script>
+ 	
+ <script src="../assets/js/web/dt_s.js"></script>
+
+
+<!-- <script src="../assets/js/web/icojsdash.js"></script> -->
   	<script src="../assets/js/web/ljs_new.js"></script>
  
 	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
